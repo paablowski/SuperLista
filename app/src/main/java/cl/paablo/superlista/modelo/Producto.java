@@ -1,13 +1,21 @@
-package cl.paablo.superlista;
+package cl.paablo.superlista.modelo;
+
+
+import com.google.firebase.database.Exclude;
+import com.google.firebase.database.IgnoreExtraProperties;
 
 import java.util.HashMap;
 import java.util.Map;
 
-class Producto {
+@IgnoreExtraProperties
+public class Producto {
 
-    private String nombre;
-    private int cantidad;
-    private int precio;
+    public String nombre;
+    public int cantidad;
+    public int precio;
+
+    public Producto() {
+    }
 
     public Producto(String nombre, int cantidad, int precio) {
         this.nombre = nombre;
@@ -15,6 +23,7 @@ class Producto {
         this.precio = precio;
     }
 
+    @Exclude
     public Map<String, Object> toMap(){
         HashMap<String, Object> result = new HashMap<>();
         result.put("nombre",nombre);

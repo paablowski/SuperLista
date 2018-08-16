@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private LinearLayoutManager linearLayoutManager;
     private RecyclerViewAdapter recyclerViewAdapter;
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

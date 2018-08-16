@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -29,8 +31,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         allTask = new ArrayList<Task>();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         databaseReference.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
@@ -47,12 +47,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
-=======
-=======
->>>>>>> parent of 71456ac... h
+
         Button btnAgregarActivity = findViewById(R.id.btnAgregarActivity);
         btnAgregarActivity.setOnClickListener(new View.OnClickListener() {
->>>>>>> parent of 71456ac... h
+
             @Override
             public void onChildMoved(DataSnapshot dataSnapshot, String s) {
 

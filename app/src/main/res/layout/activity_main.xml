@@ -6,67 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<<<<<<< HEAD
     <Button
         android:id="@+id/btnAgregarActivity"
-        android:layout_width="71dp"
-        android:layout_height="64dp"
-        android:layout_marginBottom="45dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginLeft="297dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="297dp"
-        android:layout_marginTop="3dp"
-        android:background="@drawable/ic_add"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listaproductos" />
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/listaproductos"
-        android:layout_width="368dp"
-        android:layout_height="368dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAgregarActivity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-=======
->>>>>>> parent of b968b5e... conexion a firebase
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="320dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="30dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="45dp"
-        android:fontFamily="@font/magra_bold"
-        android:text="Listado de productos"
-        android:textColor="#f0065b"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/listaproductos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-<<<<<<< HEAD
-=======
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        app:srcCompat="@drawable/ic_add_black_24dp"
-        tools:layout_editor_absoluteX="328dp"
-        tools:layout_editor_absoluteY="455dp" />
->>>>>>> parent of b968b5e... conexion a firebase
+        android:text="Button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

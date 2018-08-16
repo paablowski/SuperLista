@@ -4,72 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="35dp"
     android:orientation="vertical"
     tools:context=".AgregarProducto">
 
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="41dp"
-        android:layout_marginBottom="15dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/magra_bold"
-        android:text="Ingrese un producto"
-        android:textColor="#f0065b"
-        android:textSize="30dp" />
 
     <EditText
         android:id="@+id/editNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Nombre producto" />
-
+        android:hint="Nombre producto"/>
     <EditText
         android:id="@+id/editCantidad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Cantidad " />
-
+        android:hint="Cantidad "/>
     <EditText
         android:id="@+id/editPrecio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Precio $ " />
+        android:hint="Precio $ "/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="82dp"
-        android:layout_marginTop="25dp"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Guardar" />
 
         <Button
             android:id="@+id/btnCancelar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#f0065b"
-            android:textSize="20dp"
-            android:fontFamily="@font/magra_bold"
             android:layout_weight="1"
             android:text="Cancelar" />
-
-        <Button
-<<<<<<< HEAD
-            android:id="@+id/btnAgregar"
-=======
->>>>>>> parent of b968b5e... conexion a firebase
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#f0065b"
-            android:textSize="20dp"
-            android:fontFamily="@font/magra_bold"
-            android:layout_weight="1"
-            android:text="Guardar" />
     </LinearLayout>
 
 </LinearLayout>

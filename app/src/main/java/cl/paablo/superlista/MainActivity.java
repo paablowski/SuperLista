@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         allTask = new ArrayList<Task>();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         databaseReference.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
@@ -47,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
             }
 
 =======
+=======
+>>>>>>> parent of 71456ac... h
         Button btnAgregarActivity = findViewById(R.id.btnAgregarActivity);
         btnAgregarActivity.setOnClickListener(new View.OnClickListener() {
 >>>>>>> parent of 71456ac... h

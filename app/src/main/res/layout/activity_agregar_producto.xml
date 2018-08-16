@@ -59,7 +59,10 @@
             android:text="Cancelar" />
 
         <Button
+<<<<<<< HEAD
             android:id="@+id/btnAgregar"
+=======
+>>>>>>> parent of b968b5e... conexion a firebase
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#f0065b"

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<<<<<<< HEAD
     <Button
         android:id="@+id/btnAgregarActivity"
         android:layout_width="71dp"
@@ -35,6 +36,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+=======
+>>>>>>> parent of b968b5e... conexion a firebase
     <TextView
         android:id="@+id/textView"
         android:layout_width="320dp"
@@ -54,5 +57,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<<<<<<< HEAD
+=======
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_add_black_24dp"
+        tools:layout_editor_absoluteX="328dp"
+        tools:layout_editor_absoluteY="455dp" />
+>>>>>>> parent of b968b5e... conexion a firebase
 
 </android.support.constraint.ConstraintLayout>

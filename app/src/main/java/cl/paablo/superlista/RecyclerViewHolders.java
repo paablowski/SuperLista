@@ -20,9 +20,9 @@ public class RecyclerViewHolders extends RecyclerView.ViewHolder {
     public RecyclerViewHolders(final View itemView, final List<Task> taskObject){
         super(itemView);
         this.taskObject = taskObject;
-        txtNombre = itemView.findViewById(R.id.txtnombreProducto);
-        txtCantidad = itemView.findViewById(R.id.txtcantidadProducto);
-        txtPrecio = itemView.findViewById(R.id.txtprecioProducto);
+        txtNombre = itemView.findViewById(R.id.nombreProd);
+        txtCantidad = itemView.findViewById(R.id.cantidadProd);
+        txtPrecio = itemView.findViewById(R.id.precioProd);
         btnEliminar = itemView.findViewById(R.id.btnEliminar);
 
 

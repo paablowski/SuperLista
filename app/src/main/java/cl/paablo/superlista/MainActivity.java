@@ -32,6 +32,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        recyclerView = findViewById(R.id.listaproductos);
+
+        recyclerView.setAdapter(new RecyclerViewAdapter(,new ProductoAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(Producto producto) {
+
+                int idProducto = producto.getIdProducto();
+                int imgProducto = producto.getImgProducto();
+                String nombreProducto = producto.getNombreProducto();
+                int categoriaProducto = producto.getCategoriaProducto();
+
+                listaNueva.add(new Producto(idProducto,imgProducto, nombreProducto, categoriaProducto));
+
+            }
+
         Button btnAgregarActivity = findViewById(R.id.btnAgregarActivity);
         btnAgregarActivity.setOnClickListener(new View.OnClickListener() {
             @Override

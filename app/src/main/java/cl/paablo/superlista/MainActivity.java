@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         allTask = new ArrayList<Task>();
 
+<<<<<<< HEAD
         databaseReference.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
@@ -45,6 +46,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
+=======
+        Button btnAgregarActivity = findViewById(R.id.btnAgregarActivity);
+        btnAgregarActivity.setOnClickListener(new View.OnClickListener() {
+>>>>>>> parent of 71456ac... h
             @Override
             public void onChildMoved(DataSnapshot dataSnapshot, String s) {
 

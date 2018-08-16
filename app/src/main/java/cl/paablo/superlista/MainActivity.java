@@ -1,7 +1,6 @@
 package cl.paablo.superlista;
 
 import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -33,9 +32,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        recyclerView = findViewById(R.id.listaproductos);
 
+        recyclerView.setAdapter(new RecyclerViewAdapter(,new ProductoAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(Producto producto) {
 
-        FloatingActionButton btnAgregarActivity = findViewById(R.id.btnAgregarActivity);
+                int idProducto = producto.getIdProducto();
+                int imgProducto = producto.getImgProducto();
+                String nombreProducto = producto.getNombreProducto();
+                int categoriaProducto = producto.getCategoriaProducto();
+
+                listaNueva.add(new Producto(idProducto,imgProducto, nombreProducto, categoriaProducto));
+
+            }
+
+        Button btnAgregarActivity = findViewById(R.id.btnAgregarActivity);
         btnAgregarActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        allTask = new ArrayList<Task>();
+
+
 
     }
 }

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -42,13 +43,20 @@ public class AgregarProducto extends AppCompatActivity {
                 finish();
             }
         });
+
+
         Button btnAgregar = findViewById(R.id.btnAgregar);
         btnAgregar.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View view) {
+
+
                 nombreProducto = editNombre.getText().toString();
                 cantidadProducto = Integer.parseInt(editCantidad.getText().toString());
                 precioProducto = Integer.parseInt(editPrecio.getText().toString());
+
+
                 Producto producto = new Producto(nombreProducto,cantidadProducto,precioProducto);
                 Map<String, Object> listadoValores = producto.toMap();
                 Map<String, Object> childUpdates = new HashMap<>();
@@ -56,8 +64,8 @@ public class AgregarProducto extends AppCompatActivity {
                 String key = mDatabase.child(nombreProducto).getKey();
                 childUpdates.put("/productos/"+key,listadoValores);
                 mDatabase.updateChildren(childUpdates);
+                }
 
-            }
         });
     }
 }

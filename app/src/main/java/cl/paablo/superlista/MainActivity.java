@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.listaproductos);
 
-       
+
         Button btnAgregarActivity = findViewById(R.id.btnAgregarActivity);
         btnAgregarActivity.setOnClickListener(new View.OnClickListener() {
             @Override

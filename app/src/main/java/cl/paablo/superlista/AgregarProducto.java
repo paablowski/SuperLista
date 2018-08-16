@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.database.DatabaseReference;
+
 import java.util.List;
 
 public class AgregarProducto extends AppCompatActivity {
@@ -13,6 +15,7 @@ public class AgregarProducto extends AppCompatActivity {
     String nombreProducto;
     int cantidadProducto;
     int precioProducto;
+    private DatabaseReference mDatabase;
     List<Producto> productos;
 
     @Override
@@ -24,7 +27,6 @@ public class AgregarProducto extends AppCompatActivity {
         final EditText editPrecio = findViewById(R.id.editPrecio);
 
 
-
         Button btnAgregar = findViewById(R.id.btnAgregar);
         btnAgregar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,8 +34,8 @@ public class AgregarProducto extends AppCompatActivity {
                 String nombreProducto = editNombre.getText().toString();
                 int cantidadProducto = Integer.parseInt(editCantidad.getText().toString());
                 int precioProducto = Integer.parseInt(editPrecio.getText().toString());
-                productos.add(new Producto(nombreProducto,cantidadProducto,precioProducto));
-                
+                //mDatabase.child("listado").child()
+
             }
         });
     }

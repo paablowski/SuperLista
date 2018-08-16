@@ -1,5 +1,8 @@
 package cl.paablo.superlista;
 
+import java.util.HashMap;
+import java.util.Map;
+
 class Producto {
 
     private String nombre;
@@ -12,27 +15,12 @@ class Producto {
         this.precio = precio;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
+    public Map<String, Object> toMap(){
+        HashMap<String, Object> result = new HashMap<>();
+        result.put("nombre",nombre);
+        result.put("cantidad",cantidad);
+        result.put("precio",precio);
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public int getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
-    }
-
-    public int getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(int precio) {
-        this.precio = precio;
+        return result;
     }
 }

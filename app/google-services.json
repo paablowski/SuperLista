@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "821937048559-95djsdqlkjdoscari1lcac0e93qs4sg4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cl.paablo.superlista",
+            "certificate_hash": "271e907bf7fd48dd90129b7e460776c5e7f93612"
+          }
+        },
+        {
           "client_id": "821937048559-ce8dilos9h6rqc34opj9tf0vgqh8vk26.apps.googleusercontent.com",
           "client_type": 3
         }

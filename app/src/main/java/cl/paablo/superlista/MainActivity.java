@@ -1,5 +1,7 @@
 package cl.paablo.superlista;
 
+import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -25,43 +27,23 @@ public class MainActivity extends AppCompatActivity {
     private List<Task> allTask;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        allTask = new ArrayList<Task>();
-
-        databaseReference.addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-            }
 
 
-        Button btnAgregarActivity = findViewById(R.id.btnAgregarActivity);
+
+        FloatingActionButton btnAgregarActivity = findViewById(R.id.btnAgregarActivity);
         btnAgregarActivity.setOnClickListener(new View.OnClickListener() {
-
             @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AgregarProducto.class);
+                startActivity(intent);
 
             }
         });
-
 
     }
 }

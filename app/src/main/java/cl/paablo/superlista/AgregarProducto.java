@@ -1,5 +1,6 @@
 package cl.paablo.superlista;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,9 +26,18 @@ public class AgregarProducto extends AppCompatActivity {
         final EditText editNombre = findViewById(R.id.editNombre);
         final EditText editCantidad = findViewById(R.id.editCantidad);
         final EditText editPrecio = findViewById(R.id.editPrecio);
+        Button btnCancelar = findViewById(R.id.btnCancelar);
+        btnCancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AgregarProducto.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
 
-        Button btnAgregar = findViewById(R.id.btnAgregar);
+        Button btnAgregar = findViewById(R.id.btnGuardar);
         btnAgregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

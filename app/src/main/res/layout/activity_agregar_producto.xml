@@ -12,17 +12,29 @@
         android:id="@+id/editNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre producto"/>
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:hint="Nombre producto" />
+
     <EditText
         android:id="@+id/editCantidad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Cantidad "/>
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Cantidad " />
+
     <EditText
         android:id="@+id/editPrecio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Precio $ "/>
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Precio $ " />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,15 +42,20 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnAgregar"
+            android:id="@+id/btnGuardar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             android:layout_weight="1"
             android:text="Guardar" />
 
         <Button
+            android:id="@+id/btnCancelar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             android:layout_weight="1"
             android:text="Cancelar" />
     </LinearLayout>

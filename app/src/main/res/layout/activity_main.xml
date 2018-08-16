@@ -15,13 +15,4 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="108dp"
-        android:layout_height="87dp"
-        android:clickable="true"
-        app:srcCompat="@android:color/holo_red_light"
-        tools:layout_editor_absoluteX="251dp"
-        tools:layout_editor_absoluteY="439dp" />
-
 </android.support.constraint.ConstraintLayout>

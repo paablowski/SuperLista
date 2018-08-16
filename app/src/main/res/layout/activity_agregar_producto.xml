@@ -9,16 +9,17 @@
 
 
     <EditText
-        android:id="@+id/txtNombre"
+        android:id="@+id/editNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nombre producto"/>
     <EditText
-        android:id="@+id/txtCantidad"
+        android:id="@+id/editCantidad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Cantidad "/>
     <EditText
+        android:id="@+id/editPrecio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Precio $ "/>
@@ -29,6 +30,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btnAgregar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"

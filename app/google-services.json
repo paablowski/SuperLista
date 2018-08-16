@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "821937048559",
+    "firebase_url": "https://superlista-d8f6c.firebaseio.com",
+    "project_id": "superlista-d8f6c",
+    "storage_bucket": "superlista-d8f6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821937048559:android:e39bb338782a592b",
+        "android_client_info": {
+          "package_name": "cl.paablo.superlista"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821937048559-9ah82pt0l7rcnbm5h5pktq4j8b54cv4a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cl.paablo.superlista",
+            "certificate_hash": "989d858128ae67b805ca62667eb0c0eb0b505b5d"
+          }
+        },
+        {
+          "client_id": "821937048559-ce8dilos9h6rqc34opj9tf0vgqh8vk26.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMgBA25ZSD81k4GAuLVPmkmzTqbM-s4jo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821937048559-ce8dilos9h6rqc34opj9tf0vgqh8vk26.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

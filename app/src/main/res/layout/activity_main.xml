@@ -12,6 +12,9 @@
         android:id="@+id/textView"
         android:layout_width="320dp"
         android:layout_height="42dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/magra_bold"
         android:text="Listado de productos"
         android:textColor="#f0065b"
@@ -20,15 +23,38 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="250dp" />
+        android:layout_height="250dp"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/idLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Lista vacía" />
+
+        </LinearLayout>
+    </ScrollView>
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/btnAgregarActivity"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnAgregarProducto"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
-        android:elevation="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
         android:clickable="true"
+        android:elevation="5dp"
         android:src="@drawable/ic_add_black_24dp" />
 
 </LinearLayout>
